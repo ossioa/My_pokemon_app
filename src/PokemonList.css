@@ -1,0 +1,46 @@
+/* Styles pour la liste des Pokémon */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Style pour chaque élément de la liste */
+li {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Utilisation de Flexbox */
+  flex-direction: column; /* Empiler les éléments verticalement */
+  align-items: center; /* Centrer les éléments horizontalement */
+}
+
+/* Style pour les images des Pokémon */
+img {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+/* Style pour le nom des Pokémon */
+span {
+  margin-top: auto; /* Placer le nom en bas de l'image */
+}
+
+/* Style pour la barre de recherche Pokemon */
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 600px; /* Largeur de la barre de recherche */
+  position: relative; /* Position relative pour le positionnement de la barre de recherche */
+  top: 0; /* Réinitialisation de la position verticale */
+  left: 50%; /* Déplacer la barre de recherche à 50% de la largeur du conteneur parent */
+  transform: translateX(-50%); /* Décaler la barre de recherche de moitié de sa propre largeur vers la gauche pour la centrer */
+  margin-top: 20px; /* Ajout de marges pour décaler la barre de recherche vers le bas */
+  box-sizing: border-box;
+}
